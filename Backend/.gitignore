@@ -2,3 +2,4 @@ node_modules/
 service-account.json
 token.json
 credentials.json
+.env
