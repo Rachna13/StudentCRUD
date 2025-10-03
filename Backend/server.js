@@ -110,11 +110,12 @@ app.post('/students', async (req, res) => {
   try {
     const students = await readStudents();
     const existingIds = students.map(s => s.ID);
-
+//existingIds= [1,2,3,5] 
+let newId= Math.max(...existingIds)+1;
     // Smallest available ID
-    let newId = 1;
-    while (existingIds.includes(newId)) newId++;
-
+    //let newId = 1;
+    //while (existingIds.includes(newId)) newId++;
+//newId=4
     const newStudent = { ID: newId, ...req.body };
     students.push(newStudent);
 
