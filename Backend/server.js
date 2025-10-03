@@ -2,12 +2,7 @@ const express = require('express');
 const { google } = require('googleapis');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// require('dotenv').config();
-// const fs = require('fs');
 
-// const serviceAccount = JSON.parse(process.env.SERVICE_ACCOUNT_KEY);
-// const token = process.env.TOKEN_KEY;
-// const credentials = JSON.parse(process.env.CLIENT_CREDENTIALS);
 
 const app = express();
 app.use(cors());
